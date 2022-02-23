@@ -44,6 +44,4 @@ secrets.yml
 **/build/
 **/logs/
 **/testlogs/
-.DS_Store
-.vscode
 Thumbs.db
