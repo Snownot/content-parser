@@ -1,0 +1,11 @@
+server:
+  port: ${SERVER_PORT:8083}
+
+logging:
+  file:
+    name: testlogs/log.log
+  level:
+    root: info
+
+test.requestUri: http://localhost:8083/parser/all
+domain.name: http://localhost
