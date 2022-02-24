@@ -49,9 +49,11 @@ public class IntegrationContentParserTest extends AbstractTestNGSpringContextTes
             add("Test1");
             add("Test3");
             add("Test5");
+            add("Test5");
+            add("Test5");
         }};
 
-        String text = "Test1Test5Test5";
+        String text = "Test1 Test5 Test5 x";
 
         InputContentDto responseBody = preCondition.createResponseBody(words, text);
 

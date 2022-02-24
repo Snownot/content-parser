@@ -35,6 +35,7 @@ Url адрес Swagger ui генерируется по правилу - domain.
 
 #### Запуск:
 mvn clean install - билд проеста с предварительным запуском тестов
+mvn spring-boot:run - запуск приложения
 java -jar content-parser-1.0.jar - запуск приложения
 
 #### Отчеты:

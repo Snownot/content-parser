@@ -14,13 +14,13 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @RestController
-@RequestMapping("parser")
+@RequestMapping("/parser")
 public class RestContentParserController {
 
     @Resource
     private ContentParserService contentParserService;
 
-    @RequestMapping(path = "all", method = RequestMethod.POST,
+    @RequestMapping(path = "/all", method = RequestMethod.POST,
             produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
     public ResponseEntity<List<ResultContentDto>> getParserResultAll(@RequestBody InputContentDto inputContentDto) {
 

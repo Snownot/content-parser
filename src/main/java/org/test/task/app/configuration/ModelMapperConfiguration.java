@@ -9,7 +9,7 @@ import org.test.task.app.domain.dto.ConvertDto;
 import org.test.task.app.domain.dto.ResultContentDto;
 
 @Configuration
-public class ContentParserConfiguration {
+public class ModelMapperConfiguration {
 
     @Bean("modelMapper")
     public ModelMapper createModelMapper() {
