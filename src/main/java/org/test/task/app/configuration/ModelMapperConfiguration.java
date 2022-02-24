@@ -11,6 +11,12 @@ import org.test.task.app.domain.dto.ResultContentDto;
 @Configuration
 public class ModelMapperConfiguration {
 
+    /**
+     * Instantiate an instance of the given class, and using to map types
+     * wth deep mapping
+     *
+     * @return Created instance of a ModelMapper class
+     */
     @Bean("modelMapper")
     public ModelMapper createModelMapper() {
 
@@ -27,6 +33,15 @@ public class ModelMapperConfiguration {
 
     }
 
+    /**
+     * Instantiate an instance of the given class, and using to map types
+     * wth deep mapping
+     *
+     * @param convert The model contain from word which can be
+     *                present inside text
+     *
+     * @return Count words inside text
+     */
     private Integer convert(ConvertDto convert) {
 
         return StringUtils.countMatches(convert.getText(), convert.getWord());

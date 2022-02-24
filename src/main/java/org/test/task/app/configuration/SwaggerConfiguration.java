@@ -19,6 +19,12 @@ public class SwaggerConfiguration {
     @Value("${server.port}")
     private String port;
 
+    /**
+     * Base configurations for Swagger Ui, must include
+     * domainName and port;
+     *
+     * @return Create OpenAPI configuration
+     */
     @Bean
     public OpenAPI springShopOpenAPI() {
 
@@ -32,6 +38,11 @@ public class SwaggerConfiguration {
                         .title("API")).servers(servers);
     }
 
+    /**
+     * Can be change controllers group name, and create target to scan
+     *
+     * @return Create GroupedOpenApi configuration
+     */
     @Bean
     public GroupedOpenApi groupOpenApiV1() {
         String[] paths = {"/**"};

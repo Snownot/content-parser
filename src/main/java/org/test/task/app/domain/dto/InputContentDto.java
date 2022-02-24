@@ -5,6 +5,10 @@ import lombok.Data;
 
 import java.util.List;
 
+/**
+ * This class include list of words which
+ * can be presented inside text
+ */
 @Data
 @Builder
 public class InputContentDto {

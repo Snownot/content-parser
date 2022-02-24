@@ -8,17 +8,26 @@ import org.test.task.app.domain.dto.ResultContentDto;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * This class include methods for processed
+ * data and prepared this for controllers
+ */
 @Service
 public class ContentParserService {
 
     @Resource(name = "modelMapper")
     private ModelMapper modelMapper;
 
+    /**
+     * This method parse text from {@link InputContentDto)}
+     * @param inputContentDto as contains words
+     *
+     * @return List {@link ResultContentDto)} with information about word
+     */
     public List<ResultContentDto> parse(InputContentDto inputContentDto) {
 
         ArrayList<ConvertDto> convertData = new ArrayList<>();
